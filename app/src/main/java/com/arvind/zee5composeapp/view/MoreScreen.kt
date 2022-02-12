@@ -1,5 +1,6 @@
 package com.arvind.zee5composeapp.view
 
+import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -258,11 +259,18 @@ fun MenuListItem(menuTitle: MenuItems) {
 }
 
 
-@Preview(showBackground = true)
 @Composable
+@Preview
 fun MoreScreenPreview() {
     MoreScreen()
 }
+
+@Composable
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
+fun MoreScreenDarkPreview() {
+    MoreScreen()
+}
+
 
 
 
